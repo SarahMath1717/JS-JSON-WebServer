@@ -12,3 +12,9 @@ app.listen(port, () => {
     console.log("now listening on port"); // Confirms port is connected and available for requests
 });
 // you can run this with 'node app.js'
+
+app.get("/cats", (req, res) => {    // use APP to manage GET request to endpoint /CATS
+    const data = {catsArray: ["Ragdoll", "Tabby", "Moggie"]}    //assign the data that will be called
+    res.send(data)    //identify what response will be sent in relation to the request.
+});
+// we don't detail the request at this stage because there is only one option and we don't need to post etc.
