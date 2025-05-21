@@ -23,3 +23,8 @@ app.get("/cats", (req, res) => {    // use APP to manage GET request to endpoint
     res.send(data)    //identify what response will be sent in relation to the request. This will be sent back in JSON form.
 });
 // we don't detail the request at this stage because there is only one option and we don't need to post etc.
+
+
+
+
+
